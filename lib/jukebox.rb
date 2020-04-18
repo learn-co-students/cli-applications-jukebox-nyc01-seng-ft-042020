@@ -47,10 +47,16 @@ def run(songs)
   while user_input.downcase != "exit"
     if user_input == "help"
       help
+      puts "Please enter a command:"
+      user_input = gets.strip
     elsif user_input == "list"
       list(songs)
+      puts "Please enter a command:"
+      user_input = gets.strip
     elsif user_input == "play"
       play(songs)
+      puts "Please enter a command:"
+      user_input = gets.strip
     end
   end
   exit_jukebox
